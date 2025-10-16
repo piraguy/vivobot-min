@@ -6,6 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// IMPORTANT: define PORT before using it
 
 app.get("/", (_req, res) => {
   return res.send("VivoBot backend OK - hello");
